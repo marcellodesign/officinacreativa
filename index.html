@@ -88,6 +88,31 @@
 .hero nav a:hover {
   border-color: #f5f3f0;
 }
+.auditorium-bg {
+  background: url('auditorium.png') center/cover no-repeat;
+  color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auditorium-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* velatura per leggibilità */
+}
+
+.auditorium-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+.auditorium-bg .badge {
+  color: #e0d8cc;
+  font-weight: 600;
+}
 
     section {
       padding: 40px 10vw;
@@ -255,14 +280,14 @@
         <li>Possibilità di integrare la sala meeting con il Sound Stage per format complessi.</li>
       </ul>
     </div>
-    <div class="highlight">
-      <div class="badge">Format possibili</div>
-      <ul>
-        <li>Kick‑off aziendali e presentazioni strategiche.</li>
-        <li>Roadshow, demo tecniche e presentazioni di nuovi prodotti.</li>
-        <li>Eventi formativi, masterclass e workshop verticali.</li>
-      </ul>
-    </div>
+    <div class="highlight auditorium-bg">
+  <div class="badge">Format possibili</div>
+  <ul>
+    <li>Kick‑off aziendali e presentazioni strategiche.</li>
+    <li>Roadshow, demo tecniche e presentazioni di nuovi prodotti.</li>
+    <li>Eventi formativi, masterclass e workshop verticali.</li>
+  </ul>
+</div>
   </div>
 </section>
 
