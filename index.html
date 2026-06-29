@@ -5,7 +5,7 @@
   <title>Officina Creativa SRLS – Sound Stage & Hub Tecnologico B2B</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sound Stage e Hub tecnologico B2B nel centro storico: meeting, produzione contenuti, caffetteria e spazi di lavoro.">
-  <style>
+ <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -43,86 +43,94 @@
     nav a:hover {
       border-color: #f5f3f0;
     }
-	.hero {
-  position: relative;
-  background: url('saletta.png') center/cover no-repeat;
-  height: 360px;
-  color: #f5f3f0;
-  display: flex;
-  align-items: flex-end;
-  padding: 24px 10vw;
-}
 
-.hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35); /* velatura per leggibilità */
-}
+    .hero {
+      position: relative;
+      background: url('saletta.png') center/cover no-repeat;
+      height: 360px;
+      color: #f5f3f0;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px 10vw;
+    }
 
-.hero .content {
-  position: relative;
-  z-index: 2;
-}
+    .hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
 
-.hero h1 {
-  margin: 0 0 8px;
-  font-size: 2rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
 
-.hero p {
-  margin: 0 0 16px;
-  max-width: 640px;
-  font-size: 0.95rem;
-}
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
 
-.hero nav a {
-  color: #f5f3f0;
-  text-decoration: none;
-  margin-right: 16px;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
-}
+    .hero p {
+      margin: 0 0 16px;
+      max-width: 640px;
+      font-size: 0.95rem;
+    }
 
-.hero nav a:hover {
-  border-color: #f5f3f0;
-}
-.auditorium-bg {
-  background: url('auditorium.png') center/cover no-repeat;
-  color: #fff;
-  padding: 24px;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-}
-	  .auditorium-bg .badge {
-  color: #fff !important;
-}
+    .hero nav a {
+      color: #f5f3f0;
+      text-decoration: none;
+      margin-right: 16px;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
 
-.auditorium-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35); /* velatura più leggera */
-}
+    .hero nav a:hover {
+      border-color: #f5f3f0;
+    }
 
-.auditorium-bg > * {
-  position: relative;
-  z-index: 2;
-}
+    .auditorium-bg {
+      background: url('auditorium.png') center/cover no-repeat;
+      color: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .auditorium-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .auditorium-bg > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ✅ TESTO BIANCO SOLO NEL BOX AUDITORIUM */
+    .auditorium-bg .badge {
+      color: #fff !important;
+    }
+
     section {
       padding: 40px 10vw;
     }
+
     section h2 {
       margin-top: 0;
       font-size: 1.6rem;
     }
+
     .grid {
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
       gap: 32px;
     }
+
     .tagline {
       font-weight: 600;
       text-transform: uppercase;
@@ -131,6 +139,7 @@
       color: #777;
       margin-bottom: 8px;
     }
+
     .pill {
       display: inline-block;
       padding: 4px 10px;
@@ -140,20 +149,24 @@
       margin-right: 6px;
       margin-bottom: 6px;
     }
+
     ul {
       padding-left: 18px;
       margin-top: 8px;
     }
+
     .highlight {
-     border-radius: 12px;
+      border-radius: 12px;
       padding: 20px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.06);
     }
+
     .columns {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
+
     .badge {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -161,18 +174,21 @@
       color: #555;
       margin-bottom: 4px;
     }
+
     footer {
       background: #111;
       color: #f5f3f0;
       padding: 24px 10vw;
       font-size: 0.85rem;
     }
+
     footer a {
       color: #f5f3f0;
       text-decoration: none;
       border-bottom: 1px solid #f5f3f0;
     }
-  </style>
+</style>
+
 </head>
 <body>
 
